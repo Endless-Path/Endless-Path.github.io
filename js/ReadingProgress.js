@@ -1,12 +1,1 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var winHeight = window.innerHeight,
-          docHeight = document.documentElement.scrollHeight,
-          progressBar = document.querySelector('#content_progress');
-    progressBar.max = docHeight - winHeight;
-    progressBar.value = window.scrollY;
-
-    document.addEventListener('scroll', function () {
-          progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
-          progressBar.value = window.scrollY;
-    });
-});
+document.addEventListener("DOMContentLoaded",function(){var e=window.innerHeight,n=document.documentElement.scrollHeight,t=document.querySelector("#content_progress");t.max=n-e,t.value=window.scrollY,document.addEventListener("scroll",function(){t.max=document.documentElement.scrollHeight-window.innerHeight,t.value=window.scrollY})});
