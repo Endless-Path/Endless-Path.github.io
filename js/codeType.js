@@ -1,1 +1,0 @@
-let languageStyle=t=>["js","javascript"].includes(t)?"JavaScript":["ts","typescript"].includes(t)?"TypeScript":"xml"===t?"Vue":t.toUpperCase();document.querySelectorAll("figure.highlight").forEach(t=>{t.setAttribute("data-type",languageStyle(t.getAttribute("class").substring(10)))});
